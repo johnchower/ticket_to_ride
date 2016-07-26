@@ -30,3 +30,5 @@ destination_tickets <-
           }
       )
   }
+
+write.csv(destination_tickets, "destination_tickets_formatted.csv", row.names = F)
