@@ -9,7 +9,7 @@ library(plotly)
 source('fn_convert_df_graph_to_igraph.r')
 
 long_city_adjacency_matrix <- 
-  read.csv("long_city_adjacency_matrix.csv", stringsAsFactors = F)
+  read.csv("city_connection_facts.csv", stringsAsFactors = F)
 
 city_graph <- long_city_adjacency_matrix %>% 
   select(city_1, city_2) %>%
